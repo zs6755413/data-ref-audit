@@ -1,0 +1,33 @@
+{
+  "name": "data-ref-audit",
+  "version": "1.0.0",
+  "description": "Check JSON datasets for missing fields, enum drift, duplicate keys, dangling references and unreferenced records",
+  "bin": {
+    "data-ref-audit": "bin/audit.js"
+  },
+  "main": "lib/audit.js",
+  "files": [
+    "lib",
+    "bin",
+    "data",
+    "schema.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "demo": "node bin/audit.js data/sample.json schema.json"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "json",
+    "data-quality",
+    "schema",
+    "referential-integrity",
+    "lint",
+    "zero-dependency"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "private": false
+}

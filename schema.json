@@ -1,0 +1,19 @@
+{
+  "collections": {
+    "tools": {
+      "id": "id",
+      "required": ["id", "name", "slug", "group"],
+      "unique": ["slug"],
+      "enums": {
+        "group": ["chat", "draw", "code", "office", "video", "audio"]
+      },
+      "refs": {
+        "linkId": { "collection": "links", "required": false }
+      }
+    },
+    "links": {
+      "id": "id",
+      "required": ["id", "name", "url"]
+    }
+  }
+}

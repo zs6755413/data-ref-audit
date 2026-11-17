@@ -1,0 +1,24 @@
+{
+  "_notice": "演示数据。故意埋了五类问题：字段缺失、空字符串、枚举越界、slug 重复、引用孤儿。",
+  "links": [
+    { "id": "l1", "name": "豆包", "url": "https://example.com/doubao", "category": "对话" },
+    { "id": "l2", "name": "DeepSeek", "url": "https://example.com/deepseek", "category": "对话" },
+    { "id": "l3", "name": "Kimi", "url": "https://example.com/kimi", "category": "对话" },
+    { "id": "l4", "name": "Cursor", "url": "https://example.com/cursor", "category": "编程" },
+    { "id": "l5", "name": "Suno", "url": "https://example.com/suno", "category": "音频" },
+    { "id": "l6", "name": "可灵", "url": "https://example.com/kling", "category": "视频" },
+    { "id": "l7", "name": "通义千问", "url": "https://example.com/qwen", "category": "对话" }
+  ],
+  "tools": [
+    { "id": "t1", "name": "豆包", "slug": "doubao", "group": "chat", "desc": "中文对话助手", "linkId": "l1", "price": "免费" },
+    { "id": "t2", "name": "DeepSeek", "slug": "deepseek", "group": "chat", "desc": "推理见长的对话模型", "linkId": "l2", "price": "免费" },
+    { "id": "t3", "slug": "kimi", "group": "chat", "desc": "长文档阅读", "linkId": "l3" },
+    { "id": "t4", "name": "豆包 Lite", "slug": "doubao", "group": "chat", "desc": "轻量版", "linkId": "l1" },
+    { "id": "t5", "name": "Cursor", "slug": "cursor", "group": "coding", "desc": "编辑器内补全", "linkId": "l4" },
+    { "id": "t6", "name": "Suno", "slug": "suno", "group": "audio", "desc": "按描述生成歌曲", "linkId": "l99" },
+    { "id": "t7", "name": "", "slug": "kling", "group": "video", "desc": "文生视频", "linkId": "l6" },
+    { "id": "t8", "name": "通义千问", "slug": "qwen", "group": "chat", "desc": "通用对话", "linkId": "l7", "freeQuota": "试用额度" },
+    { "id": "t9", "name": "即梦", "slug": "jimeng", "group": "draw", "desc": "图片与短视频", "linkId": "l98" },
+    { "id": "t2", "name": "DeepSeek 重复", "slug": "deepseek-v2", "group": "chat", "desc": "同 id 的另一条", "linkId": "l2" }
+  ]
+}
